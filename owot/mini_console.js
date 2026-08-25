@@ -8,11 +8,11 @@
 	execButton.textContent = "Evaluate";
 	clearButton.textContent = "Clear outputs";
 
-	div.style.position = "absolute";
+	div.style.position = "fixed";
 	div.style.zIndex = 2 ** 31 - 1;
-	div.style.transform = "translateY(-150%)";
 	div.style.width = "100%";
     div.style.backgroundColor = "#fff";
+    div.style.bottom = "0";
 
 	field.style.width = "100%";
     field.style.resize = "none";
