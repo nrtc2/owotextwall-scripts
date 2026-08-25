@@ -8,13 +8,14 @@
 
 	div.style.position = "absolute";
 	div.style.zIndex = 2 ** 31 - 1;
-	div.style.transform = "translateY(-50px)";
-	div.style.maxWidth = "100%";
-    div.style.minWidth = "100%";
+	div.style.transform = "translateY(-150%)";
+	div.style.width = "100%";
     div.style.backgroundColor = "#fff";
 
-	field.style.maxWidth = "100%";
-    field.style.minWidth = "100%";
+	field.style.width = "100%";
+    field.style.resize = "none";
+
+	outputs.style.maxHeight = "50%";
 
 	execButton.addEventListener("click", function() {
         const out = document.createElement("pre"),
