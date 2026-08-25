@@ -18,11 +18,11 @@
 		try {
             out.textContent = eval.call(globalThis, val);
 			outputs.appendChild(inp);
-			outputs.appendChild(f)
+			outputs.appendChild(out)
 		} catch (e) {
             out.textContent = e;
 			outputs.appendChild(inp);
-			outputs.appendChild(f)
+			outputs.appendChild(out)
 		}
 		field.value = ""
 	});
