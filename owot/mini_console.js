@@ -1,10 +1,12 @@
 (function() {
 	const div = document.createElement("div"),
 		execButton = document.createElement("button"),
+		clearButton = document.createElement("button"),
 		field = document.createElement("textarea"),
 		outputs = document.createElement("div");
 
 	execButton.textContent = "Evaluate";
+	clearButton.textContent = "Clear outputs";
 
 	div.style.position = "absolute";
 	div.style.zIndex = 2 ** 31 - 1;
@@ -36,6 +38,11 @@
 
 		field.value = ""
 	});
+
+	clearButton.addEventListener("click", function() {
+		outputs.replaceChildren();
+	});
+
 	div.addEventListener("click", function() {
 		worldFocused = false
 	});
@@ -43,5 +50,7 @@
 	div.appendChild(outputs);
 	div.appendChild(field);
 	div.appendChild(execButton);
+	div.appendChild(clearButton);
+
 	document.body.appendChild(div);
 })();
