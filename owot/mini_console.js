@@ -143,14 +143,19 @@
     clearButton.textContent = "Clear outputs";
     closeButton.textContent = "Close";
 
+    execButton.style.margin = "5px";
+    clearButton.style.margin = "5px";
+    closeButton.style.margin = "5px";
+
     div.style.position = "fixed";
     div.style.zIndex = 2 ** 31 - 1;
     div.style.width = "100%";
     div.style.backgroundColor = "#fff";
     div.style.bottom = "0";
 
-    field.style.width = "100%";
+    field.style.width = "calc(100% - 10px)";
     field.style.resize = "none";
+    field.style.margin = "5px";
 
     outputs.style.maxHeight = "50%";
 
