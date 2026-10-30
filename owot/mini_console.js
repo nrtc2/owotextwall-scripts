@@ -141,6 +141,7 @@
 
     execButton.textContent = "Evaluate";
     clearButton.textContent = "Clear outputs";
+    closeButton.textContent = "Close";
 
     div.style.position = "fixed";
     div.style.zIndex = 2 ** 31 - 1;
